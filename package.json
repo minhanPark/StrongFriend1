@@ -4,15 +4,20 @@
 	"description": "StrongFriend single page",
 	"main": "app.js",
 	"scripts": {
-		"start": "nodemon app"
+		"start": "cross-env NODE_ENV=production PORT=80 pm2 start app.js -i 0",
+		"dev": "nodemon app"
 	},
 	"author": "runningwater",
 	"license": "ISC",
 	"dependencies": {
 		"cookie-parser": "^1.4.4",
+		"cross-env": "^5.2.0",
 		"express": "^4.16.4",
 		"express-session": "^1.16.1",
+		"helmet": "^3.18.0",
+		"hpp": "^0.2.2",
 		"morgan": "^1.9.1",
+		"pm2": "^3.5.0",
 		"pug": "^2.0.3"
 	},
 	"devDependencies": {
