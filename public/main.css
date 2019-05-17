@@ -1,0 +1,24 @@
+body {
+	margin: 0;
+}
+.container {
+	width: 100%;
+}
+.img-wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+#imgs {
+	width: 100%;
+	margin: 0 auto;
+}
+@media all and (max-width: 960px) {
+	.img-wrapper {
+		width: 90%;
+	}
+}
+@media all and (max-width: 400px) {
+	.img-wrapper {
+		width: 100%;
+	}
+}
